@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily Health Check Timer
+
+[Timer]
+OnCalendar=*-*-* 08:00:00
+Persistent=true
+RandomizedDelaySec=120
+AccuracySec=1min
+
+[Install]
+WantedBy=timers.target

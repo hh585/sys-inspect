@@ -1,0 +1,2 @@
+# 每天 08:30 批量巡检，CSV 按日期归档
+30 8 * * * cd /opt/sys-inspect && ./bin/batch-inspect.sh -H hosts.txt -s "sshd,nginx" -P 10 -o /var/log/inspect/report-$(date +\%F).csv >> /var/log/inspect/cron.log 2>&1

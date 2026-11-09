@@ -1,0 +1,5 @@
+# 每行一个 host 或 user@host，支持注释和空行
+# web01
+# web02
+# root@db01
+# 10.0.0.21
